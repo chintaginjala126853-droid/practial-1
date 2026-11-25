@@ -1,0 +1,13 @@
+fact=1
+def factorial(a):
+  global fact
+  if a>1:
+    fact = fact*a
+    factorial(a-1)
+
+  else:
+    return
+num =int(input("enter a number for factorial"))
+factorial(num)
+print("factorial of",num,"is",fact)
+
